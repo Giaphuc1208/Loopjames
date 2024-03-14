@@ -23,17 +23,26 @@
     //     a=b;
     //     b=fib;
     // }
-    let a= 0;
-    let b= 1;
-    console.log(a);
-    console.log(b);
+    // let a = 0;
+    // let b = 1;
+    // for (let i = 0; i < 19; i++) {
+    //     let fib = a + b;
+    //     a = b;
+    //     b = fib;
+    //     if (fib % 5 === 0) {
+    //         console.log(fib)
+    //     }
+    // }
+    let a = 0;
+    let b = 1;
+    let sum = 0;
     for (let i = 0; i < 19; i++) {
-        let fib=a+b;
-        console.log(fib);
-        a=b;
-        b=fib;
+        let fib = a + b;
+        a = b;
+        b = fib;
+        sum = fib + a + b - 1;
+        console.log(sum)
     }
-
 </script>
 </body>
 </html>
